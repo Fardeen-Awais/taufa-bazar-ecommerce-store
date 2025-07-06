@@ -1,0 +1,152 @@
+import { Product } from '@/types'
+
+export const products: Product[] = [
+  {
+    id: '1',
+    name: 'Remote Control Car - High Speed',
+    description: 'Fast remote control car with 4WD, perfect for kids aged 6-12. Includes rechargeable battery and controller.',
+    price: 2500,
+    originalPrice: 3500,
+    image: 'https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=500&h=500&fit=crop',
+    category: 'Toys',
+    rating: 4.5,
+    reviewCount: 128,
+    inStock: true,
+    tags: ['remote-control', 'car', 'battery-operated', 'kids']
+  },
+  {
+    id: '2',
+    name: 'Educational Building Blocks Set',
+    description: 'Colorful building blocks for creative play. Helps develop motor skills and imagination. 100 pieces included.',
+    price: 1200,
+    image: 'https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=500&h=500&fit=crop',
+    category: 'Educational Toys',
+    rating: 4.7,
+    reviewCount: 89,
+    inStock: true,
+    tags: ['educational', 'building-blocks', 'creative', 'learning']
+  },
+  {
+    id: '3',
+    name: 'Barbie Fashion Doll Set',
+    description: 'Beautiful Barbie doll with multiple outfits and accessories. Perfect gift for girls aged 3-10.',
+    price: 1800,
+    originalPrice: 2200,
+    image: 'https://images.unsplash.com/photo-1596461404969-9b9a0ee07fdb?w=500&h=500&fit=crop',
+    category: 'Dolls',
+    rating: 4.3,
+    reviewCount: 156,
+    inStock: true,
+    tags: ['barbie', 'doll', 'fashion', 'girls']
+  },
+  {
+    id: '4',
+    name: 'Puzzle Set - 1000 Pieces',
+    description: 'High-quality jigsaw puzzle featuring beautiful landscapes. Great for family bonding and brain exercise.',
+    price: 800,
+    image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=500&fit=crop',
+    category: 'Puzzles',
+    rating: 4.6,
+    reviewCount: 342,
+    inStock: true,
+    tags: ['puzzle', 'jigsaw', 'family', 'brain-teaser']
+  },
+  {
+    id: '5',
+    name: 'Art & Craft Kit for Kids',
+    description: 'Complete art kit with paints, brushes, papers, and instructions. Encourages creativity and artistic skills.',
+    price: 1500,
+    originalPrice: 2000,
+    image: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=500&h=500&fit=crop',
+    category: 'Art & Craft',
+    rating: 4.4,
+    reviewCount: 67,
+    inStock: false,
+    tags: ['art', 'craft', 'painting', 'creative']
+  },
+  {
+    id: '6',
+    name: 'Board Game - Monopoly Pakistan',
+    description: 'Classic Monopoly game with Pakistani cities and landmarks. Perfect for family game nights.',
+    price: 2200,
+    image: 'https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?w=500&h=500&fit=crop',
+    category: 'Board Games',
+    rating: 4.8,
+    reviewCount: 189,
+    inStock: true,
+    tags: ['board-game', 'monopoly', 'family', 'strategy']
+  },
+  {
+    id: '7',
+    name: 'Science Experiment Kit',
+    description: 'Educational science kit with 50+ experiments. Safe and fun learning for curious minds aged 8-14.',
+    price: 2800,
+    image: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=500&h=500&fit=crop',
+    category: 'Educational Toys',
+    rating: 4.5,
+    reviewCount: 156,
+    inStock: true,
+    tags: ['science', 'experiment', 'educational', 'learning']
+  },
+  {
+    id: '8',
+    name: 'Soft Teddy Bear - Large',
+    description: 'Extra soft and cuddly teddy bear, perfect for babies and toddlers. Made from hypoallergenic materials.',
+    price: 1200,
+    image: 'https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=500&h=500&fit=crop',
+    category: 'Stuffed Toys',
+    rating: 4.9,
+    reviewCount: 203,
+    inStock: true,
+    tags: ['teddy-bear', 'soft', 'cuddly', 'baby-safe']
+  },
+  {
+    id: '9',
+    name: 'LEGO City Police Station',
+    description: 'Detailed LEGO police station building set. Includes minifigures and vehicles. Ages 6-12.',
+    price: 4500,
+    originalPrice: 5500,
+    image: 'https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=500&h=500&fit=crop',
+    category: 'Building Sets',
+    rating: 4.6,
+    reviewCount: 98,
+    inStock: true,
+    tags: ['lego', 'building', 'police', 'city']
+  },
+  {
+    id: '10',
+    name: 'Musical Keyboard for Kids',
+    description: 'Electronic keyboard with 37 keys and multiple sounds. Great for introducing music to children.',
+    price: 3200,
+    image: 'https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?w=500&h=500&fit=crop',
+    category: 'Musical Toys',
+    rating: 4.2,
+    reviewCount: 145,
+    inStock: true,
+    tags: ['keyboard', 'musical', 'electronic', 'music']
+  },
+  {
+    id: '11',
+    name: 'Outdoor Sports Set',
+    description: 'Complete outdoor sports kit with football, cricket bat, and badminton set. Perfect for active kids.',
+    price: 1800,
+    image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&h=500&fit=crop',
+    category: 'Sports Toys',
+    rating: 4.4,
+    reviewCount: 167,
+    inStock: true,
+    tags: ['sports', 'outdoor', 'football', 'cricket']
+  },
+  {
+    id: '12',
+    name: 'Magic Set for Beginners',
+    description: 'Complete magic kit with 20 tricks and instructions. Perfect for kids who love to perform.',
+    price: 1600,
+    image: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=500&h=500&fit=crop',
+    category: 'Magic & Tricks',
+    rating: 4.3,
+    reviewCount: 89,
+    inStock: true,
+    tags: ['magic', 'tricks', 'performance', 'entertainment']
+  }
+] 

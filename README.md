@@ -1,36 +1,138 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎁 TaufaBazar — eCommerce Platform for Toys & Gifts
 
-## Getting Started
+**TaufaBazar** is a custom-built eCommerce store focused on the Pakistani market, designed for selling toys and gifts with a **Cash-on-Delivery (COD)** checkout model. Built using **Next.js**, it includes a full-featured **admin dashboard**, **real-time features**, and is optimized for mobile and future reusability.
 
-First, run the development server:
+---
+
+## 🚀 Project Goals
+
+- Build a clean, modern, mobile-first storefront
+- Enable fast order placements via COD
+- Offer a custom admin dashboard with complete control
+- Use 100% free-tier tools (Neon, Vercel, Cloudinary, Resend)
+- Make the entire project **reusable for launching future stores**
+
+---
+
+## 🛠 Tech Stack
+
+| Layer            | Tool                        |
+|------------------|-----------------------------|
+| Frontend         | Next.js (App Router)        |
+| Styling          | Tailwind CSS                |
+| State Handling   | React Hooks, React Context  |
+| Forms            | React Hook Form             |
+| Database         | PostgreSQL via Neon + Drizzle ORM |
+| Image Hosting    | Cloudinary                  |
+| Emails           | Resend (for order confirmations) |
+| Notifications    | Novu (admin/mobile alerts)  |
+| Deployment       | Vercel (Free Tier)          |
+| Authentication   | Google OAuth (via BetterAuth or custom) |
+
+---
+
+## 📦 Core Features
+
+### 🛍️ Storefront (Public Site)
+- Home page with product grid
+- Product listing by category
+- Product detail page with image gallery and variant selector
+- Cart page with quantity update & remove
+- Checkout form (Name, Phone, Address, City)
+- Order confirmation page with order ID
+
+### 🛒 Admin Dashboard
+- Google-authenticated login (email domain check)
+- Add/Edit/Delete products
+- Manage product variants (size, color, stock)
+- View customer orders and shipping info
+- Update order status (Pending → Shipped → Delivered)
+
+### 🔒 Admin Approval Logic
+- Two admin users allowed
+- No critical action (e.g. product CRUD) can be done **without both admins' approval**
+- Role-based permissions (Main Admin & Secondary Admin)
+
+### 💬 Real-time Features (Planned or Optional)
+- Real-time user-to-admin messaging (via custom WebSocket or Socket.IO)
+- Admin dashboard shows incoming messages
+- Push notifications (via Novu)
+
+---
+
+## 🗃 Database Schema (Prisma)
+
+**Models**:
+- `User` — Admins with email and role
+- `Product` — Name, Description, Image, Base Price
+- `Variant` — Size, Color, Variant-specific price & stock
+- `Order` — Customer info, Variant ID, Quantity, Status
+- `EmailTrigger` — Optional email notification log
+
+---
+
+## 🚀 Current Status
+
+### ✅ Completed
+- Basic Next.js setup with TypeScript
+- Responsive header with navigation
+- Hero section with call-to-action
+- Product grid with cards
+- Category showcase
+- Footer with company information
+- Mobile-responsive design
+- Sample product data structure
+
+### 🔄 Next Steps
+1. **Database Setup** - Configure Prisma with PostgreSQL
+2. **Product Management** - Create product detail pages with variants
+3. **Shopping Cart** - Implement cart functionality with React Context
+4. **Checkout Flow** - COD checkout form with order management
+5. **Admin Dashboard** - Google OAuth and admin interface
+6. **Real-time Features** - Messaging and notifications
+7. **Deployment** - Vercel deployment with environment setup
+
+---
+
+## 🏃‍♂️ Getting Started
 
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Open http://localhost:3001
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📱 Current Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Responsive Design**: Works perfectly on mobile, tablet, and desktop
+- **Modern UI**: Clean, professional design with smooth animations
+- **Product Showcase**: Beautiful product cards with ratings and pricing
+- **Category Navigation**: Easy browsing by product categories
+- **Search Functionality**: Header search bar for product discovery
+- **Wishlist**: Heart icon to save favorite products
+- **Mobile Menu**: Hamburger menu for mobile navigation
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🎯 Target Audience
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Primary**: Pakistani customers looking for toys and gifts
+- **Secondary**: Parents, gift shoppers, and toy enthusiasts
+- **Payment**: Cash-on-Delivery (COD) focused
+- **Language**: English with potential for Urdu localization
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🔧 Development Notes
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Built with Next.js 15 and TypeScript for type safety
+- Uses Tailwind CSS for rapid, responsive development
+- Component-based architecture for reusability
+- SEO optimized with proper metadata
+- Ready for database integration and admin features
