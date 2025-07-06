@@ -27,7 +27,7 @@
 | Emails           | Resend (for order confirmations) |
 | Notifications    | Novu (admin/mobile alerts)  |
 | Deployment       | Vercel (Free Tier)          |
-| Authentication   | Google OAuth (via BetterAuth or custom) |
+| Authentication   | Next Auth |
 
 ---
 
